@@ -20,4 +20,5 @@ services:
       - nsmapserver
     ports:
       - "80"
+    network: vhost_default
         
