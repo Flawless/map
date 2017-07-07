@@ -1,0 +1,12 @@
+
+# 1. Build
+sudo docker build -t mapserver mapserver/
+sudo docker build -t mapserver mapcache/
+
+# 2. Configure
+sudo docker network create --driver=bridge ns_network
+
+# 3. Run
+sudo docker run --rm -it --net=ns_network --name nsmapserver -d -p 8181:80 -v `pwd`/mapserver_vol:/map mapserver
+sudo docker run --rm -it --net=ns_network --name nsmapcache -d -p 8282:80 -v `pwd`/mapcache_vol:/map mapcache
+

@@ -1,0 +1,39 @@
+# В КАРТАХ ОТСУТСТВУЕТ!
+
+# Буй осевой
+    LAYER
+      NAME "Buoy Safe Water"
+      TYPE POINT
+      STATUS DEFAULT
+      CONNECTIONTYPE OGR
+      CONNECTION "ns_map/1V620101.000"
+      DATA "BOYSAW"
+
+# 16.8 Буй осевой
+      CLASS
+        EXPRESSION ([BOYSHP] = 1 && '[COLOUR]' = '1,2,1,2,1' && '[COLPAT]' = '1')
+        STYLE
+           SYMBOL 'buoy_16-8'
+           SIZE 50
+        END
+      END    
+
+# 16.9 Буй поворотно-осевой
+      CLASS
+        EXPRESSION ([BOYSHP] = 1 && ('[COLOUR]' = '3,2,3,2,3' || '[COLOUR]' = '3,1,3,1,3') && '[COLPAT]' = '1')
+        STYLE
+           SYMBOL 'buoy_16-9'
+           SIZE 50
+        END
+      END  
+
+# 16.23 Буй сигарообразный поворотно-осевой
+      CLASS
+        EXPRESSION ([BOYSHP] = 8 && '[COLOUR]' = '3,2' && '[COLPAT]' = '1')
+        STYLE
+           SYMBOL 'buoy_16-23'
+           SIZE 50
+        END
+      END 
+ 
+    END

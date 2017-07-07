@@ -1,0 +1,23 @@
+version: '2'
+services:
+  map:
+    build:
+      context: mapserver
+      dockerfile: Dockerfile
+    volumes:
+      - ./mapserver_vol:/map
+    ports:
+      - "8181:80"
+  cache:
+    build:
+      context: mapcache
+      dockerfile: Dockerfile
+    volumes:
+      - ./mapcache_vol:/map
+    depends_on:
+      - map
+    links:
+      - map:nsmapserver
+    ports:
+      - "8282:80"
+        

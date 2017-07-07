@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mapcache>
+	<cache name="disk" type="disk">
+		<base>/tmp</base>
+		<symlink_blank/>
+	</cache>
+	
+	<errors>report</errors>
+
+	<locker type="disk">
+		<directory>/tmp</directory>
+		<timeout>300</timeout>
+	</locker>
+
+	<source name="nssrc" type="wms">
+		<getmap>
+			<params>
+				<FORMAT>image/png</FORMAT>
+				<LAYERS>NONIUS_MAP</LAYERS>
+			</params>
+		</getmap>
+
+		<http>
+			<url>nsmapserver:80/cgi-bin/mapserv?map=/map/nonius.map</url>
+		</http>
+	</source>
+	
+	<tileset name="nstile">
+		<source>nssrc</source>
+		<grid>WGS84</grid>
+		<cache>disk</cache>
+		<format>PNG</format>
+		<metatile>5 5</metatile>
+		<metabuffer>10</metabuffer>
+		<expires>3600</expires>
+	</tileset>
+
+	<default_format>PNG</default_format>
+
+	<service type="wms" enabled="true">
+		<full_wms>assemble</full_wms>
+		<resample_mode>bilinear</resample_mode>
+		<format>PNG</format>
+		<maxsize>4096</maxsize>
+	</service>
+
+	<service type="tms" enabled="true"/>
+
+	<service type="demo" enabled="true"/>
+
+</mapcache>

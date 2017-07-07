@@ -1,0 +1,50 @@
+MAP
+    CONFIG "MS_ERRORFILE" "/tmp/generic_map_error.txt"
+    
+    NAME "NONIUS_MAP"
+    SIZE 800 800
+    UNITS meters
+
+    EXTENT 30 59 31 60
+
+    IMAGECOLOR -1 -1 -1
+    IMAGEQUALITY 100
+    IMAGETYPE PNG
+
+    PROJECTION
+      "proj=latlong"
+      "ellps=WGS84"
+      "datum=WGS84"
+      #"init=WGS84"
+      "no_defs"
+    END    
+
+
+    WEB
+      IMAGEPATH '/tmp/'
+      IMAGEURL '/tmp/'
+      
+      METADATA
+        "wms_title" "WMS NS MAP"
+        "wms_onlineresource" "http://localhost:8182/cgi-bin/mapserv?map=/map/nonius.map&"
+        "wms_enable_request" "*"
+        "wms_srs" "WGS84"
+        "wms_feature_info_mime_type" "text/html"
+        "wms_format" "image/png"
+        "wms_server_version"  "1.1.1"
+      END
+    END 
+
+    SYMBOLSET "ns_symbolset.txt"
+  
+    INCLUDE "ns_map/1V620101.map"
+    INCLUDE "ns_map/1V620102.map"
+    INCLUDE "ns_map/1V620103.map"
+    INCLUDE "ns_map/1V620104.map"
+    INCLUDE "ns_map/1V620105.map"
+    INCLUDE "ns_map/1V620106.map"
+    INCLUDE "ns_map/1V620107.map"
+    INCLUDE "ns_map/1V620108.map"
+    INCLUDE "ns_map/1V620109.map"
+
+END

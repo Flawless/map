@@ -1,0 +1,122 @@
+SYMBOLSET
+  
+# 16.1 Буй левой кромки судового хода
+  SYMBOL
+    NAME "buoy_16-1"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-1.png"
+  END # SYMBOL
+  
+# 16.2 Буй правой кромки судового хода
+  SYMBOL
+    NAME "buoy_16-2"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-2.png"
+  END # SYMBOL
+
+# 16.3 Буй поворотный левой кромки
+  SYMBOL
+    NAME "buoy_16-3"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-3.png"
+  END # SYMBOL
+
+# 16.4 Буй поворотный правой кромки
+  SYMBOL
+    NAME "buoy_16-4"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-4.png"
+  END # SYMBOL
+
+# 16.5 Буй разделения судового хода
+  SYMBOL
+    NAME "buoy_16-5"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-5.png"
+  END # SYMBOL
+
+# 16.6 Буй "Знак опасности" левой стороны
+  SYMBOL
+    NAME "buoy_16-6"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-6.png"
+  END # SYMBOL
+
+# 16.7 Буй "Знак опасности" левой стороны
+  SYMBOL
+    NAME "buoy_16-7"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-7.png"
+  END # SYMBOL
+
+# 16.8 Буй осевой
+  SYMBOL
+    NAME "buoy_16-8"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-8.png"
+  END # SYMBOL
+
+# 16.9 Буй поворотно-осевой
+  SYMBOL
+    NAME "buoy_16-9"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-9.png"
+  END # SYMBOL
+
+# 16.11 Бакен левой кромки судового хода
+  SYMBOL
+    NAME "buoy_16-11"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-11.png"
+  END # SYMBOL
+
+# 16.12 Бакен правой кромки судового хода
+  SYMBOL
+    NAME "buoy_16-12"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-12.png"
+  END # SYMBOL
+
+# 16.20 Буй сигарообразный левой кромки
+  SYMBOL
+    NAME "buoy_16-20"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-20.png"
+  END # SYMBOL
+
+# 16.21 Буй сигарообразный правой кромки
+  SYMBOL
+    NAME "buoy_16-21"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-21.png"
+  END # SYMBOL
+
+# 16.23 Буй сигарообразный поворотно-осевой
+  SYMBOL
+    NAME "buoy_16-23"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-23.png"
+  END # SYMBOL
+
+# 16.24 Буй сигарообразный разделения судового хода
+  SYMBOL
+    NAME "buoy_16-24"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-24.png"
+  END # SYMBOL
+
+# 16.25 Веха левой кромки судового хода
+  SYMBOL
+    NAME "buoy_16-25"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-25.png"
+  END # SYMBOL
+
+# 16.26 Веха правой кромки судового хода
+  SYMBOL
+    NAME "buoy_16-26"
+    TYPE pixmap
+    IMAGE "ns_icons/buoy_16-26.png"
+  END # SYMBOL
+
+END #SYMBOLSET
